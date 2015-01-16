@@ -89,3 +89,8 @@ title: Kullanışlı komutlar
     ```bash
     strings /dev/urandom | tr -cd '[:alnum:]' | fold -w 30 | head -n 1
     ```
+- Bütün hata ayıklama mesajlarını gerçek zamanlı göster.
+  Kaynak: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+    ```bash
+    find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
+    ```
