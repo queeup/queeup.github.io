@@ -4,13 +4,17 @@ title: Tor proxy
 ---
 _Anlatım Archlinux için yapılmıştır. Yükleme ve bazı komutlar diğer işletim sistemlerinde faklıdır._
 
-####Tor'u yüklemek için
-`pacman -Sy tor`
+####Tor'u yüklemek için:
+```
+# pacman -Sy tor
+```
 
 ####Tor ayarlarım:
 _Not_: Ayarlardaki IP adreslerini kendi ağınıza göre değiştirin.
 
-`nano /etc/tor/torrc`
+```
+# nano /etc/tor/torrc
+```
 
 ```
 SocksPort 192.168.1.5:9100 # Bind to this adddress:port too.
@@ -29,26 +33,36 @@ DNSPort 53
 ```
 
 #### Özel izin gerektiren portlar için tor'u root yetkileriyle başlatmak:
-`mkdir /etc/systemd/system/tor.service.d`
-
-`touch /etc/systemd/system/tor.service.d/start-as-root.conf`
-
 ```
-[Service]
-User=root
+# mkdir /etc/systemd/system/tor.service.d`
+# touch /etc/systemd/system/tor.service.d/start-as-root.conf`
 ```
+
+  * Yaratılan dosyaya aşağıdaki metni yapıştırın:
+    ```
+    [Service]
+    User=root
+    ```
 
 #### Tor'u başlat
-`systemctl start tor.service`
+```
+# systemctl start tor.service
+```
 
 #### Hata ayıklamak ve tor'un mesajlarına bakmak için:
-`systemctl status -l tor.service`
+```
+# systemctl status -l tor.service
+```
 
 #### Tüm tor çıktıları için:
-`journalctl -u tor`
+```
+journalctl -u tor
+```
 
 #### Sistem başlarken tor'u otomatik olarak başlatmak için:
-`systemctl enable tor.service`
+```
+# systemctl enable tor.service
+```
 
 #### Tarayıcı veya programların tor'u kullanmasını sağlayan ayarlar:
  * Socks5 ve Uzak DNS

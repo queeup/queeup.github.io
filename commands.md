@@ -3,7 +3,7 @@ layout: blog
 title: Kullanışlı komutlar
 ---
 - Bütün günlük iletileri dosyalarını gerçek zamanlı görmek için:
-  Kaynak: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+  _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
 
     ```bash
     find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
@@ -84,13 +84,40 @@ title: Kullanışlı komutlar
     rsync -r -a -v --delete -e ssh queeup@192.168.1.5:~/Resimler/ ~/Resimler/
     ```
 - 30 karakter uzunluğunda rastgele bir parola oluştur.
-  Kaynak: http://www.commandlinefu.com/commands/view/13902/generate-a-random-password-30-characters-long
+  _Kaynak_: http://www.commandlinefu.com/commands/view/13902/generate-a-random-password-30-characters-long
 
     ```bash
     strings /dev/urandom | tr -cd '[:alnum:]' | fold -w 30 | head -n 1
     ```
 - Bütün hata ayıklama mesajlarını gerçek zamanlı göster.
-  Kaynak: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+  _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+    
     ```bash
     find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
+    ```
+- Resim dosyasını %50 küçült.
+    
+    ```bash
+    mogrify -resize 50% resim/dosya.jpg
+    ```
+- Klasördeki bütün dosyaların içeriğini yazdır.
+    ```bash
+    find /etc/xdg/autostart/ -type f -exec printf '### START OF FILE ###\n### File: %s ###\n' {} \; -exec cat {} \; -exec printf '### END OF FILE ###\n\n' \;
+    ```
+- Komuta verilen değişkenleri yazdır.
+  _Kaynak_: https://stackoverflow.com/q/821837
+    ```bash
+    tr \\0 ' ' < /proc/<pid>/cmdline
+    ```
+    
+    veya
+    
+    ```bash
+    xargs -0 < /proc/<pid>/cmdline
+    ```
+    
+    veya
+    
+    ```bash
+    ps -ww -fp <pid>
     ```
