@@ -2,7 +2,7 @@
 layout: blog
 title: Thunderbird Ayarları
 ---
-###Varsayılan Posta Görünümü Ayarı
+### Varsayılan Posta Görünümü Ayarı
 
 Kaynak: http://superuser.com/a/13551
 
@@ -15,7 +15,7 @@ mailnews.default_view_flags:         default      integer     1
 
 Özetle Görünüm Sıralama Koşulu: Tarih | Azalarak | Dizili
 
-###IMAP Ayarları
+### IMAP Ayarları
 
 Kaynak: http://superuser.com/a/57899
 

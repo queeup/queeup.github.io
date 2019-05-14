@@ -4,12 +4,12 @@ title: Tor proxy
 ---
 _Anlatım Archlinux için yapılmıştır. Yükleme ve bazı komutlar diğer işletim sistemlerinde faklıdır._
 
-####Tor'u yüklemek için:
+#### Tor'u yüklemek için:
 ```
 # pacman -Sy tor
 ```
 
-####Tor ayarlarım:
+#### Tor ayarlarım:
 _Not_: Ayarlardaki IP adreslerini kendi ağınıza göre değiştirin.
 
 ```

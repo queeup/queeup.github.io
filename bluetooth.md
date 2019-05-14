@@ -2,38 +2,42 @@
 layout: blog
 title: Bluetooth aygıtının adını değiştirmek
 ---
-####Aygıt adlarının saklandığı dosyayı açmak için:
+#### Aygıt adlarının saklandığı dosyayı açmak için:
 
-_Not_: `<BDADDR>` = Bilgisayarınızdaki Bluetooth aygıtının adresi (XX:XX:XX:XX:XX:XX)
+_Not_: `<BDADDR1>` = Bilgisayarınızdaki Bluetooth aygıtının adresi (XX:XX:XX:XX:XX:XX)
+       `<BDADDR2>` = Bilgisayarınıza bağlı olan, adını değiştirmek istediğiniz
+                     Bluetooth aygıtının adresi (YY:YY:YY:YY:YY:YY)
  
   * Bluetooth aygıtının adresini bulmak için: 
  
     ```
     $ hciconfig -a | grep BD | awk '{print $3}'
     ```
-
+#### Root terminaline giriş yapmak için:
 ```
-# nano /var/lib/bluetooth/<BDADDR>/names`
+$ sudo -i
+```
+```
+# nano /var/lib/bluetooth/<BDADDR1>/<BDADDR2>info
 ```
 
   * _Aygıt adını tanımlama şekli_:
 
     ```
-    <nn:nn:nn:nn:nn:nn>=device name a
-    <mm:mm:mm:mm:mm:mm>=device name b
+    Name=<device name>
     ```
 
-####Dosyada gerekli düzenlemeleri yaptıktan sonra bluetooth hizmetini yeniden başlatın:
+#### Dosyada gerekli düzenlemeleri yaptıktan sonra bluetooth hizmetini yeniden başlatın:
 ```
 # service bluetooth restart
 ```
 
-####Bilgisayarınızdaki Bluetooth aygıtına bağlı olan aygıtların temizlenmesi veya sıfırlanması için:
+#### Bilgisayarınızdaki Bluetooth aygıtına bağlı olan aygıtların temizlenmesi veya sıfırlanması için:
 
   * _Not_: Bu dizin bluetooth servisi yeniden başlatıldıktan sonra otomatik olarak yeniden oluşur.
 
 ```
-# rm -rf /var/lib/bluetooth/<BDADDR>`
+# rm -rf /var/lib/bluetooth/<BDADDR1>/<BDADDR2>
 # service bluetooth restart
 ```
 
