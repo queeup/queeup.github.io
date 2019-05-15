@@ -9,19 +9,19 @@ title: DSDT Onarımı
 1. DSDT'yi çıkarıyoruz:
 
     ```bash
-    sudo cat /sys/firmware/acpi/tables/DSDT > ~/dsdt.dat
+    # cat /sys/firmware/acpi/tables/DSDT > ~/dsdt.dat
     ```
 
 2. Decompile:
  
     ```bash
-    iasl -d dsdt.dat
+    $ iasl -d dsdt.dat
     ```
 
 3. Recompile:
  
     ```bash
-    iasl -tc dsdt.dsl
+    $ iasl -tc dsdt.dsl
     ```
 
 4. Hataları incele ve onar:
@@ -30,19 +30,19 @@ title: DSDT Onarımı
 5. Tekrar Recompile ediyoruz:
  
     ```bash
-    iasl -tc dsdt.dsl
+    $ iasl -tc dsdt.dsl
     ```
 
 ### Açılışta kendi onardığımız DSDT ile başlatma:
 1. dsdt.aml dosyasını /boot dizinine kopyalıyoruz:
   
     ```bash
-    sudo cp ~/dsdt.aml /boot/
+    # cp ~/dsdt.aml /boot/
     ```
 2. DSDT'yi grub önyükleyicide yüklemek için grub.d içine acpi betiğini koyuyoruz.
   
     ```bash
-    sudo nano /etc/grub.d/01_acpi
+    # nano /etc/grub.d/01_acpi
     ```
   
     ```sh
@@ -71,20 +71,20 @@ title: DSDT Onarımı
     ```
 
     ```bash
-    sudo chmod +x /etc/grub.d/01_acpi
+    # chmod +x /etc/grub.d/01_acpi
     ```
 3. Grub menüsünü güncelle:
 
     ```bash
-    sudo update-grub
+    # update-grub
     ```
 4. Yeni DSDT ile yeni initrd'yi yarat:
 
     ```bash
-    sudo update-initramfs -c -k `uname -r`
+    # update-initramfs -c -k `uname -r`
     ```
 5. Tekrar grub'u güncelle:
 
     ```bash
-    sudo update-grub
+    # update-grub
     ```
