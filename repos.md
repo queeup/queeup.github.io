@@ -9,7 +9,7 @@ title: Ubuntu/Linuxmint apt depolarım
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://ppa.launchpad.net/gwendal-lebihan-dev/cinnamon-nightly/ubuntu trusty main" >> /etc/apt/sources.list.d/cinnamon.list' sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 28949509
 ```
 ----------
@@ -19,7 +19,7 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google.list' | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7FAC5991
 ```
 ----------
@@ -28,7 +28,7 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://ppa.launchpad.net/transmissionbt/ppa/ubuntu trusty main" >> /etc/apt/sources.list.d/transmission.list' | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 365C5CA1
 ```
 ----------
@@ -37,7 +37,7 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "http://download.virtualbox.org/virtualbox/debian trusty contrib" >> /etc/apt/sources.list.d/virtualbox.list' sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 98AB5139
 ```
 ----------
@@ -46,7 +46,7 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://ppa.launchpad.net/teejee2008/ppa/ubuntu trusty main" >> /etc/apt/sources.list.d/timeshift.list' | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 2D0F61F0
 ```
 ----------
@@ -55,7 +55,7 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://ppa.launchpad.net/mscore-ubuntu/mscore-stable/ubuntu trusty main" >> /etc/apt/sources.list.d/musescore.list' | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 3A258030
 ```
 ----------
@@ -64,6 +64,6 @@ eklemek için:
 
 eklemek için:
 
-```bash
+```console
 # sh -c 'echo "deb http://ppa.launchpad.net/gezakovacs/ppa/ubuntu trusty main" >> /etc/apt/sources.list.d/unetbootin.list' | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv FC91AE7E
 ```

@@ -6,7 +6,7 @@ title: Kullanışlı komutlar
   
   _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
 
-    ```bash
+    ```console
     $ find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
     ```
 - Klasördeki bütün jpg dosyalarını hedef dizine kopyalar.
@@ -17,17 +17,17 @@ title: Kullanışlı komutlar
     ```
 - Klasördeki bütün jpg dosyalarını siler.
     
-    ```bash
+    ```console
     $ find /home/user/foldertosearch -name "*.jpg" -type f -exec rm '{}' \;
     ```
 - dosya adlarını özyinelemeli(recursively) olarak değiştir: bütün teaser adları _teaser olarak değişir
     
-    ```bash
+    ```console
     $ find -name "teaser*" -exec rename 's/teaser/_teaser/' {} ";"
     ```
 - deb paketlerini dizine çıkartır.
     
-    ```bash
+    ```console
     $ dpkg-deb -x <paket_adı.deb> .
     ```
 - Paketleri bağımlılıkları ile birlikte kaldırır.
@@ -42,17 +42,17 @@ title: Kullanışlı komutlar
     ```
 - Eski kernel paketlerini kaldırır.
     
-    ```bash
+    ```console
     # apt-get remove --purge 2.6.2x-xx-*
     ```
 - how to "unbroken" a package in synaptic / aptitude / apt-get, without uninstalling it. 1. Open status file:
     
-    ```bash
+    ```console
     # nano /var/lib/dkpg/status
     ```
     - search the file for apples until you find something like:
     
-        `Package: apples
+        ```Package: apples
         Status: install ok installed
         Priority: optional
         Section: libs
@@ -62,78 +62,78 @@ title: Kullanışlı komutlar
         Source: applesauce
         Version: 1.0.10-1
         Depends: packageA, packageB, obsolete
-        Description: Apples on your desktop!`
+        Description: Apples on your desktop!```
     
     - Remove obsolete from the Depends: row, save the file, and you're done - Software selection menüyü açmak için
     
-        ```bash
+        ```console
         # tasksel
         ```
 - RTMP videoların bilgilerini görmek için:
     
-    ```bash
+    ```console
     # iptables -t nat -A OUTPUT -p tcp --dport 1935 -m owner \! --uid-owner root -j REDIRECT && sudo rtmpsuck && sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -m owner \! --uid-owner root -j REDIRECT
     ```
 - Yeni baslatici olustur.
     
-    ```bash
+    ```console
     $ gnome-desktop-item-edit ~/Masaüstü --create-new USBDisk.desktop
     ```
 - rsync ile kopyala veya yedekle.
     
-    ```bash
+    ```console
     $ rsync -r -a -v --delete -e ssh queeup@192.168.1.5:~/Resimler/ ~/Resimler/
     ```
 - 30 karakter uzunluğunda rastgele bir parola oluştur.
   
   _Kaynak_: http://www.commandlinefu.com/commands/view/13902/generate-a-random-password-30-characters-long
 
-    ```bash
+    ```console
     $ strings /dev/urandom | tr -cd '[:alnum:]' | fold -w 30 | head -n 1
     ```
 - Bütün hata ayıklama mesajlarını gerçek zamanlı göster.
   
   _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
     
-    ```bash
+    ```console
     $ find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
     ```
 - Resim dosyasını %50 küçült.
     
-    ```bash
+    ```console
     $ mogrify -resize 50% resim/dosya.jpg
     ```
 - Klasördeki bütün dosyaların içeriğini yazdır.
-    ```bash
+    ```console
     $ find /etc/xdg/autostart/ -type f -exec printf '### START OF FILE ###\n### File: %s ###\n' {} \; -exec cat {} \; -exec printf '### END OF FILE ###\n\n' \;
     ```
 - Komuta verilen değişkenleri yazdır.
   
   _Kaynak_: https://stackoverflow.com/q/821837
-    ```bash
+    ```console
     $ tr \\0 ' ' < /proc/<pid>/cmdline
     ```
     
     veya
     
-    ```bash
+    ```console
     $ xargs -0 < /proc/<pid>/cmdline
     ```
     
     veya
     
-    ```bash
+    ```console
     $ ps -ww -fp <pid>
     ```
 
 - dd komutu ile usb flash belleğe iso kalıbı yazdırma:
-    ```bash
+    ```console
     # dd bs=4M if=path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync
     ```
 
 - Çalıştırılan komut bittikten sonra bilgisayarı kapatmak:
     
     _Kaynak_: https://askubuntu.com/a/207267
-    ```bash
+    ```console
     $ <çalıştırmak istenilen kod>; history -d $((HISTCMD-1)) && echo '[PASSWORD]' | sudo -S shutdown now
     ```

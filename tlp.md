@@ -3,12 +3,12 @@ layout: blog
 title: Ubuntu/Linuxmint TLP(Linux Advanced Power Management)
 ---
 #### Dağıtımın varsayılan "İşlemci Frekans Ölçekleme" ayarlarını iptal etmek için: 
-```bash
+```console
 # update-rc.d -f ondemand remove 
 ```
 
 #### Dağıtımın varsayılan "İşlemci Frekans Ölçekleme" ayarına geri dönmek için:
-```bash
+```console
 # update-rc.d ondemand defaults 
 ```
 
@@ -57,12 +57,12 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 ```
 
 #### Hemen başlatmak veya değişen ayarları uygulamak için:
-```bash
+```console
 # tlp start
 ```
 
 #### Kontrol etmek için:
-```bash
+```console
 # tlp-stat
 ```
 

@@ -14,7 +14,7 @@ _Kaynak_: https://github.com/azachar/eclipse-plugin-cleaner
 
 _Not: Aşşağıdaki komutta -t parametresini güvenlik amaçlı koydum. Hiç bir şeyi değiştirmeden komutun ne yapacağını simüle eder._
 
-```bash
+```console
 java -jar plugin-cleaner-0.4-jar-with-dependencies.jar -t -m unlimited
 ```
 

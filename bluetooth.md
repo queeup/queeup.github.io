@@ -10,27 +10,25 @@ _Not_: `<BDADDR1>` = Bilgisayarınızdaki Bluetooth aygıtının adresi (XX:XX:X
  
   * Bluetooth aygıtının adresini bulmak için: 
  
-    ```
+    ```console
     $ hciconfig -a | grep BD | awk '{print $3}'
     ```
 #### Root terminaline giriş yapmak için:
 
-```bash
+```console
 $ sudo -i
 ```
 
-```bash
+```console
 # nano /var/lib/bluetooth/<BDADDR1>/<BDADDR2>info
 ```
 
   * _Aygıt adını tanımlama şekli_:
 
-    ```
-    Name=<device name>
-    ```
+    `Name=<device name>`
 
 #### Dosyada gerekli düzenlemeleri yaptıktan sonra bluetooth hizmetini yeniden başlatın:
-```bash
+```console
 # service bluetooth restart
 ```
 
@@ -38,7 +36,7 @@ $ sudo -i
 
   * _Not_: Bu dizin bluetooth servisi yeniden başlatıldıktan sonra otomatik olarak yeniden oluşur.
 
-```bash
+```console
 # rm -rf /var/lib/bluetooth/<BDADDR1>/<BDADDR2>
 # service bluetooth restart
 ```

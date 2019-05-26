@@ -5,14 +5,14 @@ title: Tor proxy
 _Anlatım Archlinux için yapılmıştır. Yükleme ve bazı komutlar diğer işletim sistemlerinde faklıdır._
 
 #### Tor'u yüklemek için:
-```bash
+```console
 # pacman -Sy tor
 ```
 
 #### Tor ayarlarım:
 _Not_: Ayarlardaki IP adreslerini kendi ağınıza göre değiştirin.
 
-```bash
+```console
 # nano /etc/tor/torrc
 ```
 
@@ -33,7 +33,7 @@ DNSPort 53
 ```
 
 #### Özel izin gerektiren portlar için tor'u root yetkileriyle başlatmak:
-```bash
+```console
 # mkdir /etc/systemd/system/tor.service.d`
 # touch /etc/systemd/system/tor.service.d/start-as-root.conf`
 ```
@@ -45,22 +45,22 @@ DNSPort 53
     ```
 
 #### Tor'u başlat
-```bash
+```console
 # systemctl start tor.service
 ```
 
 #### Hata ayıklamak ve tor'un mesajlarına bakmak için:
-```bash
+```console
 # systemctl status -l tor.service
 ```
 
 #### Tüm tor çıktıları için:
-```bash
+```console
 journalctl -u tor
 ```
 
 #### Sistem başlarken tor'u otomatik olarak başlatmak için:
-```bash
+```console
 # systemctl enable tor.service
 ```
 

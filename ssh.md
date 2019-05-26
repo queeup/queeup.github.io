@@ -3,17 +3,17 @@ layout: blog
 title: SSH Proxy Tüneli
 ---
 #### Gereken paketleri yüklemek için:
-```bash
+```console
 # apt-get install ssh openssh-server openssh-client
 ```
 
 #### Proxy sunucusunu çalıştırmak için:
-```bash
+```console
 $ ssh -N -D 0.0.0.0:1080 localhost
 ```
 
 #### Arkaplanda ve parola girişi olmadan çalıştırmak için:
-```bash
+```console
 $ ssh -f -o PasswordAuthentication=no -N -D 0.0.0.0:1080 localhost
 ```
 
