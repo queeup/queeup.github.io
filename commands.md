@@ -137,3 +137,20 @@ title: Kullanışlı komutlar
     ```console
     $ <çalıştırmak istenilen kod>; history -d $((HISTCMD-1)) && echo '[PASSWORD]' | sudo -S shutdown now
     ```
+- Sistemdeki ramler hakkında bilgi almak için:
+    
+    ```console
+    # dmidecode -t 17
+    ```
+
+- Dizüstü bilgisayarın pili hakkında bilgi almak için:
+    
+    ```console
+    $ upower -i `upower -e | grep 'BAT'`
+    ```
+    
+    veya
+    
+    ```console
+    $ find /sys/class/power_supply/BAT0/ -type f | xargs -tn1 cat
+    ```

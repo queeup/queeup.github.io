@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Eclipse notlarım
+exclude: true
 ---
 #### Eclipse ayarlarımı kaydetmek için:
 
