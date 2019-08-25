@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Ubuntu/Linuxmint apt depolarım
-exclude: true
+published: false
 ---
 > **Not:** Bu depolar sadece Ubuntu 14.04(Trusty) ve Linuxmint 17(Rebecca) içindir.
 
