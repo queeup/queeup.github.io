@@ -2,6 +2,11 @@
 layout: blog
 title: Firefox Ayarları
 ---
+### Kısayollar
+* İstenilen sekme numarasına gitmek için `Alt+<Numara>`
+* Sağa veya sola doğru sekmeleri gezmek için `Ctrl+PgUp` ve `Ctrl+PgDn`
+
+
 #### Donanım ivmelenmesini devre dışı bırakmak için:
 `Tercihler > Gelişmiş > Genel > Mümkün olduğunda donanım ivmelenmesini kullan`: Devre dışı bırak
 
