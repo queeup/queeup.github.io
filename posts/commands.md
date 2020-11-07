@@ -167,6 +167,12 @@ title: Kullanışlı komutlar
   # dmidecode -t 17
   ```
 
+- Sistemin BIOS bilgilerini görmek için:
+
+  ```console
+  # dmidecode -t 0
+  ```
+
 - Dizüstü bilgisayarın pili hakkında bilgi almak için:
   
   ```console
