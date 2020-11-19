@@ -1,11 +1,9 @@
 ---
-layout: blog
-title: not defteri
-home: true
+layout: default
+title: Home
 ---
-->not defteri<-
-===========
+<p align="center" style="font-weight:bold;font-size:48px;"> -> not defteri <- </p>
+<br/>
+<p align="center" style="font-size:28px;">Soldaki menüden seçerek notlarımı okuyabilirsiniz.</p>
 
-Soldaki menüden seçerek notlarımı okuyabilirsiniz.
 
-queeup.

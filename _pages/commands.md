@@ -1,11 +1,11 @@
 ---
-layout: blog
-title: Kullanışlı komutlar
+layout: page
+title: kullanışlı komutlar
 ---
 
 - Bütün günlük iletileri dosyalarını gerçek zamanlı görmek için:
   
-  _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+  _Kaynak_: [http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color]()
   
   ```console
   $ find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
@@ -101,7 +101,7 @@ title: Kullanışlı komutlar
 
 - 30 karakter uzunluğunda rastgele bir parola oluştur.
   
-  _Kaynak_: http://www.commandlinefu.com/commands/view/13902/generate-a-random-password-30-characters-long
+  _Kaynak_: [http://www.commandlinefu.com/commands/view/13902/generate-a-random-password-30-characters-long]()
   
   ```console
   $ strings /dev/urandom | tr -cd '[:alnum:]' | fold -w 30 | head -n 1
@@ -109,7 +109,7 @@ title: Kullanışlı komutlar
 
 - Bütün hata ayıklama mesajlarını gerçek zamanlı göster.
   
-  _Kaynak_: http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color
+  _Kaynak_: [http://www.commandlinefu.com/commands/view/13605/view-all-new-log-messages-in-real-time-with-color]()
   
   ```console
   $ find /var/log -type f -iregex '.*[^\.][^0-9]+$' -not -iregex '.*gz$' 2> /dev/null | xargs tail -n0 -f
@@ -129,7 +129,7 @@ title: Kullanışlı komutlar
 
 - Komuta verilen değişkenleri yazdır.
   
-  _Kaynak_: https://stackoverflow.com/q/821837
+  _Kaynak_: [https://stackoverflow.com/q/821837]()
   
   ```console
   $ tr \\0 ' ' < /proc/<pid>/cmdline
@@ -155,7 +155,7 @@ title: Kullanışlı komutlar
 
 - Çalıştırılan komut bittikten sonra bilgisayarı kapatmak:
   
-    _Kaynak_: https://askubuntu.com/a/207267
+    _Kaynak_: [https://askubuntu.com/a/207267]()
   
   ```console
   $ <çalıştırmak istenilen kod>; history -d $((HISTCMD-1)) && echo '[PASSWORD]' | sudo -S shutdown now

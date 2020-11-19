@@ -1,18 +1,19 @@
 ---
-layout: blog
-title: Bluetooth aygıtının adını değiştirmek
+layout: page
+title: bluetooth aygıtının adını değiştirmek
 ---
 #### Aygıt adlarının saklandığı dosyayı açmak için:
 
-_Not_: `<BDADDR1>` = Bilgisayarınızdaki Bluetooth aygıtının adresi (XX:XX:XX:XX:XX:XX)
-       `<BDADDR2>` = Bilgisayarınıza bağlı olan, adını değiştirmek istediğiniz
-                     Bluetooth aygıtının adresi (YY:YY:YY:YY:YY:YY)
+`<BDADDR1>` = Bilgisayarınızdaki Bluetooth aygıtının adresi (XX:XX:XX:XX:XX:XX)
+`<BDADDR2>` = Bilgisayarınıza bağlı olan, adını değiştirmek istediğiniz \
+              Bluetooth aygıtının adresi (YY:YY:YY:YY:YY:YY)
  
-  * Bluetooth aygıtının adresini bulmak için: 
- 
-    ```console
-    $ hciconfig -a | grep BD | awk '{print $3}'
-    ```
+* Bluetooth aygıtının adresini bulmak için: 
+
+  ```console
+  $ hciconfig -a | grep BD | awk '{print $3}'
+  ```
+
 #### Root terminaline giriş yapmak için:
 
 ```console
@@ -43,4 +44,4 @@ $ sudo -i
 
 _Kaynak_:
 
- * http://www.spinics.net/lists/linux-bluetooth/msg30560.html
+ * [http://www.spinics.net/lists/linux-bluetooth/msg30560.html]()

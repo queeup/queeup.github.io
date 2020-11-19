@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Tor proxy
+layout: page
+title: tor proxy
 ---
 _Anlatım Archlinux için yapılmıştır. Yükleme ve bazı komutlar diğer işletim sistemlerinde faklıdır._
 
@@ -56,7 +56,7 @@ DNSPort 53
 
 #### Tüm tor çıktıları için:
 ```console
-journalctl -u tor
+$ journalctl -u tor
 ```
 
 #### Sistem başlarken tor'u otomatik olarak başlatmak için:
@@ -71,6 +71,6 @@ journalctl -u tor
 
 _Kaynaklar_:
  
- * https://wiki.archlinux.org/index.php/tor
- * https://www.torproject.org/docs/tor-manual.html.en
+ * [https://wiki.archlinux.org/index.php/tor]()
+ * [https://www.torproject.org/docs/tor-manual.html.en]()
  * Raspberry Pi 21 Brilliant Projects - Project 5 / Sayfa 35-39

@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Eclipse notlarım
+layout: page
+title: eclipse notlarım
 published: false
 ---
 #### Eclipse ayarlarımı kaydetmek için:

@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Firefox Ayarları
+layout: page
+title: firefox ayarları
 ---
 ### Kısayollar
 * İstenilen sekme numarasına gitmek için `Alt+<Numara>`
@@ -36,4 +36,4 @@ view_source.editor.path         Enter your editor path
 
 _Kaynak_:
  
- * http://www.reeachme.com/how-to-do/firefox-tweaks-better-browsing-experience/
+ * [http://www.reeachme.com/how-to-do/firefox-tweaks-better-browsing-experience/]()

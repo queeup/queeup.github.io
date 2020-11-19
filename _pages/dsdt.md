@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: DSDT Onarımı
+layout: page
+title: dsdt onarımı
 ---
 - Gereken paketler: iasl
  - `# apt-get install iasl`

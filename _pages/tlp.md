@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Ubuntu/Linuxmint TLP(Linux Advanced Power Management)
+layout: page
+title: ubuntu/linuxmint tlp(linux advanced power management)
 ---
 #### Dağıtımın varsayılan "İşlemci Frekans Ölçekleme" ayarlarını iptal etmek için: 
 ```console
@@ -68,6 +68,6 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 
 _Kaynak_:
  
- * http://linrunner.de/en/tlp/docs/tlp-faq.html
- * http://linrunner.de/en/tlp/docs/tlp-configuration.html
- * http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
+ * [http://linrunner.de/en/tlp/docs/tlp-faq.html]()
+ * [http://linrunner.de/en/tlp/docs/tlp-configuration.html]()
+ * [http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html]()

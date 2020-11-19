@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: elementary OS notlarım
+layout: page
+title: elementary os notlarım
 ---
 
 - Kaldırdığım uygulamalar:

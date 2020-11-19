@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Thinkpad T430 AMT Firmware güncelleme
+layout: page
+title: thinkpad t430 amt firmware güncelleme
 ---
 ### *Gereken donanım:*
 
@@ -55,18 +55,10 @@ title: Thinkpad T430 AMT Firmware güncelleme
 
 *Kaynaklar:* 
 
-- [http://www.thinkwiki.org/wiki/Intel_Active_Management_Technology_(AMT)#Firmware_update](http://www.thinkwiki.org/wiki/Intel_Active_Management_Technology_(AMT)#Firmware_update)
-
-- [https://pcsupport.lenovo.com/tr/tr/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t430/downloads](https://pcsupport.lenovo.com/tr/tr/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t430/downloads)
-
-- [https://cloudnull.io/2017/07/x1-firmware-without-windows/](https://cloudnull.io/2017/07/x1-firmware-without-windows/)
-
-- [https://www.hirensbootcd.org/](https://www.hirensbootcd.org/)
-
-- [https://www.flamingspork.com/blog/2017/11/22/updating-windows-management-engine-firmware-on-a-lenovo-without-a-windows-install/](https://www.flamingspork.com/blog/2017/11/22/updating-windows-management-engine-firmware-on-a-lenovo-without-a-windows-install/)
-
-- [https://downloadcenter.intel.com/download/27150?v=t](https://downloadcenter.intel.com/download/27150?v=t)
-
-- [https://superuser.com/a/1283343](https://superuser.com/a/1283343)
-
-- [https://www.reddit.com/r/Ubuntu/comments/7ey55d/make_sure_your_computer_is_safe_intel_management/](https://www.reddit.com/r/Ubuntu/comments/7ey55d/make_sure_your_computer_is_safe_intel_management/)
+- [http://www.thinkwiki.org/wiki/Intel_Active_Management_Technology_(AMT)#Firmware_update]()
+- [https://pcsupport.lenovo.com/tr/tr/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t430/downloads]()
+- [https://cloudnull.io/2017/07/x1-firmware-without-windows/]()
+- [https://www.flamingspork.com/blog/2017/11/22/updating-windows-management-engine-firmware-on-a-lenovo-without-a-windows-install/]()
+- [https://downloadcenter.intel.com/download/27150?v=t]()
+- [https://superuser.com/a/1283343]()
+- [https://www.reddit.com/r/Ubuntu/comments/7ey55d/make_sure_your_computer_is_safe_intel_management/]()

@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Thunderbird Ayarları
+layout: page
+title: thunderbird ayarları
 ---
 ### Varsayılan Posta Görünümü Ayarı
 

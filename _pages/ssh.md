@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: SSH Proxy Tüneli
+layout: page
+title: ssh proxy tüneli
 ---
 #### Gereken paketleri yüklemek için:
 ```console
@@ -26,7 +26,7 @@ _Not_: Sistem ayarlarında bu ssh proxy tünelini ayarlayıp uygulamaların sist
 
 _Kaynak_:
 
- * http://www.sofogeek.com/hatched-news/general/browse-internet-as-nobody-knows-what-you-are-doing-simple-socks-proxy-setup-under-linux/
- * http://www.catonmat.net/blog/linux-socks5-proxy/
- * http://straightedgelinux.com/blog/howto/socks.html
- * https://calomel.org/firefox_ssh_proxy.html
+ * [http://www.sofogeek.com/hatched-news/general/browse-internet-as-nobody-knows-what-you-are-doing-simple-socks-proxy-setup-under-linux/]()
+ * [http://www.catonmat.net/blog/linux-socks5-proxy/]()
+ * [http://straightedgelinux.com/blog/howto/socks.html]()
+ * [https://calomel.org/firefox_ssh_proxy.html]()

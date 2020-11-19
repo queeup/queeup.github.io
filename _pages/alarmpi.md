@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: page
 title: alarmpi komutları
 ---
 #### Sistemi güncellemek için:
@@ -28,5 +28,5 @@ $ gunzip --stdout backup-file.img.gz | sudo dd bs=4M of=/dev/mmcblk<X>
 ```
 
 _Kaynaklar_:
-* https://www.raspberrypi.org/documentation/linux/filesystem/backup.md
-* https://www.linux.com/learn/full-metal-backup-using-dd-command
+* [https://www.raspberrypi.org/documentation/linux/filesystem/backup.md]()
+* [https://www.linux.com/learn/full-metal-backup-using-dd-command]()

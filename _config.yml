@@ -1,7 +1,25 @@
-name: not defteri
+# Setup
+title: not defteri
+url: http://queeup.github.io
+baseurl: ''
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      permalink: /:basename/ # make URL of pages in the folder _pages as on the root.
+
+# Gems
+plugins:
+  - jekyll-gist
+
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
-url: http://queeup.github.io
+
