@@ -1,7 +1,6 @@
 # Setup
 title: not defteri
-url: http://queeup.github.io
-baseurl: ''
+url: https://queeup.github.io
 
 include:
   - _pages
