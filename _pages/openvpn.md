@@ -1,55 +1,57 @@
-# Kurulum
+---
+layout: page
+title: openvpn kurulumu
+---
+## Kurulum
 
 ### Server için:
 
-* https://github.com/Angristan/OpenVPN-install
+* [https://github.com/Angristan/OpenVPN-install]()
 
 ### Sadece client için:
 
-```
+```console
 # pacman -S openvpn
 ```
 
-# Client
+## Client
 
 ### *.ovpn client dosyasını alarmpi.conf olarak değiştiriyoruz.
 
-```
+```console
 # nano /etc/openvpn/client/alarmpi.conf
 ```
 
 ### Server'a bağlanmak için.
 
-```
-# systemctl start openvpn-client@alarmpi.service
-# systemctl enable openvpn-client@alarmpi.service
+```console
+# systemctl enable --now openvpn-client@alarmpi.service
 ```
 
 ### Hata ayıklamak için:
 
-```
+```console
 # systemctl status openvpn-client@alarmpi.service
 # journalctl -u openvpn-client@alarmpi.service
 ```
 
 ### Gerekmeyen server özelliğini devre dışı bırakmak için:
 
-```
-# systemctl stop openvpn-server@server.service
-# systemctl disable openvpn-server@server.service
+```console
+# systemctl disable --now openvpn-server@server.service
 ```
 
 ### Socks proxy kurup local ağdaki bilgisayarlara proxy desteği vermek için:
 
-* https://stackoverflow.com/a/28222249/11391913
+* [https://stackoverflow.com/a/28222249/11391913]()
 
-```
+```console
 # ssh-keygen
 # cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 # ssh -f -o PasswordAuthentication=no -N -D 0.0.0.0:1080 localhost
 ```
 
-# Server
+## Server
 
 ### Hata ayıklamaları (log) devre dışı bırakmak için:
 
