@@ -14,4 +14,14 @@ else:
 finally:
     # Some code .....(always executed)
 ```
+Saymak için `while` yerine `for` kullan (çok daha hızlı)
+```python
+def for_loop(n=100_000_000):
+    s = 0
+    for i in range(n):
+        s += i
+    return s
 
+import timeit
+print('for loop\t\t', timeit.timeit(for_loop, number=1))
+```
